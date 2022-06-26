@@ -48,3 +48,56 @@ myStr += "This is the second sentence.";
 
 const myName = "Archit Dadwal";
 const myStr = "My name is " + myName + " and I am well";
+
+//Appending Variables to Strings
+
+const someAdjective = "really important in your life";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+
+//Find the Length of a String
+
+/* Setup
+let lastNameLength = 0;
+const lastName = "Lovelace"; */
+
+// Only change code below this line
+lastNameLength = lastName.length;
+
+//Use Bracket Notation to Find the First Character in a String
+
+/* Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace"; */
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+
+// Understand String Immutability
+
+/*myStr  = "Hello World";*/
+
+myStr = "Hello World";
+
+// Use Bracket Notation to Find the Nth Character in a String
+
+/* Setup
+const lastName = "Lovelace";
+*/
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2];
+
+//Use Bracket Notation to Find the Last Character in a String
+
+/* Setup
+const lastName = "Lovelace";
+
+ Only change code below this line*/
+const lastLetterOfLastName = lastName[lastName.length - 1];
+
+//Use Bracket Notation to Find the Nth-to-Last Character in a String
+/* Setup
+const lastName = "Lovelace";
+
+// Only change code below this line*/
+const lastLetterOfLastName = lastName[lastName.length - 1];
