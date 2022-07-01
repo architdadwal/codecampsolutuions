@@ -171,3 +171,62 @@ const myArray = [
 const removedFromMyArray = myArray.pop();
 console.log(removedFromMyArray);
 console.log(myArray);
+
+//Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.
+
+// Setup
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift();
+
+//Add ["Paul", 35] to the beginning of the myArray variable using unshift().
+
+//=> Setup
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+myArray.shift();
+
+//=> Only change code below this line
+
+myArray.unshift(["Paul", 35]);
+console.log(myArray);
+
+//Create a shopping list in the variable myList. The list should be a multi-dimensional array containing several sub-arrays.
+
+const myList = [
+  ["ganmbhir", 0],
+  ["sachin", 94],
+  ["ganguly", 76],
+  ["Dhoni", 100],
+  ["rahane", 34],
+];
+
+/*Create a function called reusableFunction which prints the string Hi World to the dev console.
+Call the function. */
+
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
+
+/*Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+Call the function with two numbers as arguments.*/
+
+function functionWithArgs(num1, num2) {
+  console.log(num1 + num2);
+}
+functionWithArgs(34, 45);
+
+//Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+
+function timesFive(num) {
+  return num * 5;
+}
+const result = timesFive(8);
