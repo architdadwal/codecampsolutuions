@@ -101,3 +101,30 @@ const lastName = "Lovelace";
 
 // Only change code below this line*/
 const lastLetterOfLastName = lastName[lastName.length - 1];
+
+//Word Blanks
+
+/*const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+*/
+// Only change code below this line
+const wordBlanks =
+  "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + " ";
+
+//Store Multiple Values in one Variable using JavaScript Arrays
+
+const myArray = ["donut", 1];
+
+//Create a nested array called myArray.
+
+const myArray = [
+  ["om", 26],
+  ["ram", 31],
+];
+
+//Create a variable called myData and set it to equal the first value of myArray using bracket notation.
+
+const myArray = [50, 60, 70];
+const myData = myArray[0];
