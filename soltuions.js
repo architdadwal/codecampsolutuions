@@ -271,3 +271,72 @@ myLocalScope();
 // Run and check the console
 // myVar is not defined outside of myLocalScope
 console.log("outside myLocalScope", myVar);
+
+//Add a local variable to myOutfit function to override the value of outerWear with the string sweater.
+
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  const outerWear = "sweater";
+  return outerWear;
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+
+//Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined.
+
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+
+function addFive() {
+  sum = sum + 5;
+}
+// Only change code above this line
+
+addThree();
+addFive();
+
+//Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+
+processed = processArg(7);
+
+/*Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+
+Add the number to the end of the array, then remove the first element of the array.
+
+The nextInLine function should then return the element that was removed. */
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  const removed = arr.shift();
+  return removed;
+  // Only change code above this line
+}
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
