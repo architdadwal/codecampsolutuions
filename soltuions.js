@@ -462,3 +462,117 @@ function testGreaterOrEqual(val) {
 }
 
 testGreaterOrEqual(10);
+
+//Comparison with the Less Than Operator
+
+function testLessThan(val) {
+  if (val < 25) {
+    // Change this line
+    return "Under 25";
+  }
+
+  if (val < 55) {
+    // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+//Comparison with the Less Than Or Equal To Operator
+
+function testLessOrEqual(val) {
+  if (val <= 12) {
+    // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {
+    // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+
+testLessThan(10);
+
+//Comparisons with the Logical And Operator
+/*Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.*/
+
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val >= 25 && val <= 50) {
+    return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+
+//Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside.
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+//Combine the if statements into a single if/else statement.
+
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
+
+//Convert the logic to use else if statements.
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+
+testElseIf(7);
+
+//Logical Order in If Else Statements
+//Change the order of logic in the function so that it will return the correct statements in all cases.
+
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
