@@ -844,3 +844,14 @@ cc(3);
 cc(7);
 cc("K");
 cc("A");
+
+//Make an object that represents a dog called myDog which contains the properties name (a string), legs, tails and friends.
+const myDog = {
+  // Only change code below this line
+  name: "Tommy",
+  legs: 4,
+  tails: 1,
+  friends: ["Jommy", "Tyson", "Rocky"],
+
+  // Only change code above this line
+};
