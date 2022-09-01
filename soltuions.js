@@ -1073,3 +1073,65 @@ const myPlants = [
 ];
 
 const secondTree = myPlants[1].list[1];
+
+//You start with an updateRecords function that takes an object literal, records, containing the musical album collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.
+
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
+  },
+  2468: {
+    albumTitle: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    albumTitle: "ABBA Gold",
+  },
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  if (prop !== "tracks" && value !== "") {
+    records[id][prop] = value;
+  } else if (
+    prop === "tracks" &&
+    records[id].hasOwnProperty("tracks") === false
+  ) {
+    records[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop];
+  }
+  return records;
+}
+
+//Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop.
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+let i = 5;
+while (i >= 0) {
+  myArray.push(i);
+  i--;
+}
+
+//Use a for loop to push the values 1 through 5 onto myArray.
+
+// Setup
+const myArray = [];
+
+// Only change code below this line
+for (let i = 1; i < 6; i++) {
+  myArray.push(i);
+}
